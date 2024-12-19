@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: medium;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body nav {
+  background-color: white;
+  box-shadow: 0 10px 6px -6px #777;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+html body nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+html body nav ul li {
+  list-style-type: none;
+  margin: 2rem;
+}
+html body nav ul li a {
+  color: #a89f9f;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+html body nav ul li a:hover {
+  color: #f686bd;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+html body main section.maininfo {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+html body main section.maininfo div.info {
+  flex-basis: 450px;
+  padding: 1rem;
+}
+html body main section.maininfo div.info h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 1.2rem;
+}
+html body main section.maininfo div.info h4 {
+  font-weight: lighter;
+  padding: 1.2rem;
+}
+html body main section.maininfo div.info a {
+  padding: 0.25rem 1rem;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #f686bd;
+  color: azure;
+  transition: all 0.25s ease;
+}
+html body main section.maininfo div.info a:hover {
+  background-color: #9a8e94;
+  color: azure;
+}
+html body main section.maininfo div.mainpic {
+  flex-basis: 450px;
+}
+html body main section.maininfo div.mainpic img {
+  width: 150%;
+}
+html body main section.skillarea {
+  min-height: 70vh;
+  background-color: #ece2e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+html body main section.skillarea div.intro {
+  text-align: center;
+  width: 50%;
+}
+html body main section.skillarea div.intro h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.2rem;
+}
+html body main section.skillarea div.intro p {
+  font-weight: lighter;
+  padding: 0.6rem;
+}
+html body main section.skillarea div.progressbar {
+  text-align: center;
+  align-items: center;
+}
+html body main section.skillarea div.progressbar p {
+  padding-top: 2rem;
+}
+html body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 2rem;
+  min-height: 70vh;
+}
+html body main section.resume div.table {
+  align-items: center;
+  flex: 4 1 800px;
+  background-color: a89f9f;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+  border-collapse: collapse;
+}
+html body main section.resume div.table th {
+  font-weight: bold;
+  margin: 2rem;
+  width: 20%;
+  padding-left: 2rem;
+}
+html body main section.resume div.table td {
+  width: 80%;
+}
+html body main section.resume div.table tr {
+  border-color: #777;
+  border-top: #777 1px solid;
+  transition: all 0.3s ease;
+}
+html body main section.resume div.table tr:hover {
+  background-color: #ece2e7;
+}
+html body main section.resume div.resumepic {
+  flex: 1 1 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+html body main section.resume div.resumepic img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+    padding: 0.6rem;
+  }
+  body main section.maininfo {
+    justify-content: center;
+  }
+  body main section.maininfo div.mainpic {
+    align-items: center;
+  }
+  body main section.maininfo div.mainpic img {
+    width: 40%;
+  }
+  body main section.resume div.resumepic {
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
